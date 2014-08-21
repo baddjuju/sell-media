@@ -36,7 +36,9 @@ $settings = sell_media_get_plugin_options();
                     ?>
                 </h1>
             </header>
-
+            <?php // adds the cateogry title and optional category description to the collection archives ?>
+			<h1><?php single_cat_title(''); ?></h1> 
+			<p><?php echo category_description(); ?></p>
             <div id="sell-media-grid-container" class="sell-media-grid-container">
 
                 <?php
